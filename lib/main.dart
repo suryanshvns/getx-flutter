@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getx_tutorial/controller/home_view.dart';
-import 'package:getx_tutorial/pages/counter.dart';
+import 'package:getx_tutorial/pages/language.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,10 +9,10 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
-      // Use GetMaterialApp instead of MaterialApp
+    return MaterialApp(
+      // Use MaterialApp instead of GetMaterialApp
       debugShowCheckedModeBanner: false,
-      home: Counting(),
+      home: Language(),
     );
   }
 }
