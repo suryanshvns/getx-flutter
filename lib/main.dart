@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getx_tutorial/pages/binding.dart';
+import 'package:getx_tutorial/pages/getx_services.dart';
+import 'package:getx_tutorial/pages/home.dart';
 import 'package:getx_tutorial/pages/language.dart';
+import 'package:getx_tutorial/user/user_view.dart';
 
 void main() {
   runApp(MyApp());
@@ -9,10 +13,13 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       // Use MaterialApp instead of GetMaterialApp
       debugShowCheckedModeBanner: false,
-      home: Language(),
+      // home: HomeHello(),
+      // home: Services(),
+      // home: Binding(),
+      home: UserView(),
     );
   }
 }

@@ -1,5 +1,3 @@
-// langiageview.dart
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx_tutorial/controller/languageController.dart';

@@ -6,12 +6,10 @@ class MyController extends GetxController {
 
   incrementCounter() {
     count++;
-    update(['123']);
   }
 
   decrementCounter() {
     count--;
-    update(['123']);
   }
 
   @override
@@ -22,8 +20,8 @@ class MyController extends GetxController {
     //called once when the first time a variable changes
     // once(count, (callback) => print("once"));
 
-    debounce(count, (callback) => print("debounce"),
-        time: Duration(seconds: 5));
-    super.onInit();
+    // debounce(count, (callback) => print("debounce"),
+    //     time: Duration(seconds: 5));
+    // super.onInit();
   }
 }
